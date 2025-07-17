@@ -1,74 +1,50 @@
-# Welcome to your Lovable project
+🛡️ Password Breach Checker
+This is a secure, client-side tool built to help you check if your password has been compromised in a known data breach. It uses the "Have I Been Pwned" (HIBP) Pwned Passwords API and a k-Anonymity model to ensure your password's privacy is maintained throughout the process.
 
-## Project info
+Live Demo: [Link to your deployed project]
 
-**URL**: https://lovable.dev/projects/a6589493-3a89-4794-b988-c428996db1c8
+✨ Key Features
+Secure & Private: Your password is never sent to any server. It's hashed in your browser, and only the first 5 characters of the hash are used to query the API.
 
-## How can I edit this code?
+Instant Feedback: Quickly see if your password has been found in a data breach and how many times it has appeared.
 
-There are several ways of editing your application.
+K-Anonymity Model: Leverages the HIBP API's privacy model to protect your data during the check.
 
-**Use Lovable**
+Educational: Aims to educate users on the importance of strong, unique passwords and good security hygiene.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a6589493-3a89-4794-b988-c428996db1c8) and start prompting.
+Modern UI: Clean, simple, and responsive interface built with modern web technologies.
 
-Changes made via Lovable will be committed automatically to this repo.
+💻 Technologies Used
+This project is built with a focus on modern, client-side technologies:
 
-**Use your preferred IDE**
+React: A JavaScript library for building user interfaces.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Tailwind CSS: A utility-first CSS framework for rapid UI development.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+JavaScript (ES6+): For all core application logic.
+
+Fetch API: For making secure network requests to the HIBP service.
+
+Have I Been Pwned API: The backbone of the breach checking functionality.
+
+🚀 How to Run Locally
+If you want to work on this project locally, you can clone this repository and run it on your machine.
+
+The only requirement is having Node.js & npm installed.
 
 Follow these steps:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Bash
+
+# Step 1: Clone the repository.
+git clone https://github.com/[Your-Username]/password-breach-checker.git
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd password-breach-checker
 
 # Step 3: Install the necessary dependencies.
-npm i
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server.
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/a6589493-3a89-4794-b988-c428996db1c8) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
-# learning-react
+The application should now be running on your localhost.
